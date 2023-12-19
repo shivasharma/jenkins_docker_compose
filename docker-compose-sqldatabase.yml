@@ -1,0 +1,11 @@
+ sqldata:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserverdb
+    environment:
+      - SA_PASSWORD=Pass@word
+      - ACCEPT_EULA=Y
+    ports:
+      - "5434:1433"
+    volumes:
+      - 'D:/project/sql/:/data'
+     
