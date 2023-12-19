@@ -1,0 +1,15 @@
+version: "3"
+services:
+ rabbitmq:
+    image: "rabbitmq:3-management"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - 'rabbitmq_data:/data'
+
+volumes:
+  rabbitmq_data:
+
+  git config --global user.email "shivathebravo@gmail.com"
+  git config --global user.name "Shiva Sharma"
